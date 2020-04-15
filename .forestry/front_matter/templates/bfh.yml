@@ -16,11 +16,16 @@ fields:
     schema:
       format: markdown
   label: bodytext
-- name: ctr
+- name: ctr-text
   type: text
   config:
     required: false
-  label: CTR
+  label: CTR Text
+- name: ctr-link
+  type: text
+  config:
+    required: false
+  label: CTR Link
 - name: heroimage
   type: file
   config:
