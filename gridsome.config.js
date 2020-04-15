@@ -23,7 +23,7 @@ module.exports = {
             {
                   use: "@gridsome/source-filesystem",
                   options: {
-                        path: "content//OfferGrid**/*.md",
+                        path: "content/OfferGrid/**/*.md",
                         typeName: "Offer",
                         resolveAbsolutePaths: true,
                         remark: {

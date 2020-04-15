@@ -2,34 +2,36 @@
 	<Layout>
 		<sd-home-hero :hero="$page.hero.edges" />
 		<div class="mega-container">
-			<sd-services-grid></sd-services-grid>
+			<sd-services-grid :offer="$page.offer.edges"></sd-services-grid>
 		</div>
 	</Layout>
 </template>
 <page-query>
 query ContentHome{
-  hero: allHero{
-    edges{
-    node{
-      headline
-      bodytext
-      ctrlink
-      ctrtext
-      heroimage
-    }
-  }
-  }
-  offer: allOffer{
-        edges{
-              node{
-                  icon
-                  headline
-                  bodytext
-                  ctrlink
-                  ctrtext  
-              }
-        }
-  }
+      hero: allHero{
+            edges{
+                  node{
+                        headline
+                        bodytext
+                        ctrlink
+                        ctrtext
+                        heroimage
+                  }
+            }
+      }
+      offer: allOffer{
+            edges{
+                  node{
+                        icon
+                        offer
+                        bodytext
+                        ctrlink
+                        ctrtext
+                        ctrcolor
+                        background  
+                  }
+            }
+      }
 }
 </page-query>
 <script>
