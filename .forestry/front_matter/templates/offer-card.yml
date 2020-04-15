@@ -1,4 +1,49 @@
 ---
 label: Offer Card
 hide_body: true
-fields: []
+fields:
+- name: icon
+  type: file
+  config:
+    maxSize: 3
+  label: Icon
+- name: offer
+  type: text
+  config:
+    required: false
+  label: title
+- name: bodytext
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: bodytext
+- name: ctrtext
+  type: text
+  config:
+    required: false
+  default: Mehr erfahren
+  label: ctrtext
+- name: ctrlink
+  type: text
+  config:
+    required: false
+  label: ctrlink
+- name: ctrcolor
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - onred
+    - onblue
+    - onblack
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: ctrcolor
