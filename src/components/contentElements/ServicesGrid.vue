@@ -1,7 +1,9 @@
 <template>
 	<div class="servicesGrid grid grid-cols-3 gap-12">
-		<div class="card" v-for="item in offer" :key="item.node.id">
+		<div :class="item.node.background" class="card" v-for="item in offer" :key="item.node.id">
+			<g-image :src="item.node.icon" />
 			<h2>{{item.node.offer}}</h2>
+			<p v-html="item.node.bodytext"></p>
 		</div>
 	</div>
 </template>

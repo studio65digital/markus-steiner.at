@@ -54,8 +54,8 @@ h1 {
 	font-size: 10vw;
 }
 .heroImage {
+	position: relative;
 	right: 5.555vw;
-	top: 2rem;
 }
 .arrow-hl:after {
 	position: absolute;
