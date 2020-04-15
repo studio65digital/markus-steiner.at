@@ -31,5 +31,3 @@ fields:
   config:
     maxSize: 5
   label: heroimage
-pages:
-- content/hero1.md

@@ -11,7 +11,7 @@ fields:
   type: text
   config:
     required: false
-  label: title
+  label: headline
 - name: bodytext
   type: textarea
   default: ''
@@ -62,5 +62,3 @@ fields:
       file: 
       path: 
   label: Background
-pages:
-- content/Offer Grid/frontenddev.md
