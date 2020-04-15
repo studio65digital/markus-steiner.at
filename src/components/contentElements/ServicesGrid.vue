@@ -3,7 +3,7 @@
 		<g-link
 			:to="item.node.ctrlink"
 			:class="item.node.background"
-			class="card"
+			class="card relative transition transition-all duration-300 ease-in-out"
 			v-for="item in offer"
 			:key="item.node.id"
 		>
@@ -32,6 +32,12 @@ export default {
 	* {
 		color: white;
 	}
+	bottom: 0;
+}
+.card:hover {
+	background-color: theme("colors.secondary");
+	box-shadow: 0 15px 30px -12px #333;
+	transform: translateY(-10px);
 }
 h2 {
 	font-size: 2.7vw;
@@ -45,7 +51,10 @@ h2 {
 		fill: red;
 	}
 }
+.ctr {
+	margin-bottom: 0;
+}
 .ctr:after {
-	content: url("../assets/images/ctr-arrow-blue.svg");
+	content: url("../../assets/images/ctr-arrow-red.svg");
 }
 </style>
