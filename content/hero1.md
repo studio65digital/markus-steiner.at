@@ -6,5 +6,7 @@ bodytext: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commo
   pretium quis, sem. Nulla consequat massa quis enim.
 ctr: "/kontakt"
 heroimage: "/uploads/hero-image.jpg"
+ctrtext: Mehr erfahren
+ctrlink: "/kontakt"
 
 ---
