@@ -2,7 +2,7 @@
 	<Layout>
 		<sd-home-hero :hero="$page.hero.edges" />
 		<div class="mega-container">
-			<sd-services-grid :offer="$page.offer.edges"></sd-services-grid>
+			<sd-services-grid :offer="$page.offer.edges" />
 		</div>
 	</Layout>
 </template>
