@@ -63,5 +63,6 @@ fields:
       path: 
   label: Background
 pages:
+- content/OfferGrid/frontenddev.md
 - content/OfferGrid/interfaceexperience.md
 - content/OfferGrid/onlineconsulting.md

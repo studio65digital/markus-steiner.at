@@ -7,6 +7,6 @@ bodytext: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commo
   ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
   montes
 ctrlink: "/leistungen"
-background: bg-dark
+background: bg-secondary
 
 ---
