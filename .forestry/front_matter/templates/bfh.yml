@@ -1,4 +1,28 @@
 ---
 label: BFH
 hide_body: true
-fields: []
+fields:
+- name: headline
+  type: text
+  config:
+    required: false
+  label: Headline
+- name: bodytext
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: bodytext
+- name: ctr
+  type: text
+  config:
+    required: false
+  label: CTR
+- name: heroimage
+  type: file
+  config:
+    maxSize: 5
+  label: heroimage
