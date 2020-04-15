@@ -9,10 +9,15 @@ module.exports = {
                   use: 'gridsome-plugin-tailwindcss'
             },
             {
-                  use: '@gridsome/source-filesystem',
+                  use: "@gridsome/source-filesystem",
                   options: {
-                        path: 'content/**/*.json',
-                        typeName: 'Content'
+                        path: "content/**/*.md",
+                        typeName: "Content",
+                        resolveAbsolutePaths: true,
+                        remark: {
+                              externalLinksTarget: "_blank",
+                              externalLinksRel: ["nofollow", "noopener", "noreferrer"]
+                        }
                   }
             }
       ]
