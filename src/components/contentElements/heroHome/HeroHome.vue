@@ -1,30 +1,27 @@
 <template>
-	<div id="heroHome" class="flex items-center justify-between relative">
-		<div class="heroTextWrapper w-4/6 relative z-10">
-			<div class="arrow-hl relative">
-				<h1 class="heroHeadline">Frontend loves Design</h1>
-				<sd-headline-arrow></sd-headline-arrow>
-				<div class="bracket-left absolute">
-					<sd-bracket-left></sd-bracket-left>
+	<div id="heroHome">
+		<div class v-for="item in hero" :key="item.node.id">
+			<div class="hero-item flex items-center justify-between relative">
+				<div class="heroTextWrapper w-4/6 relative z-10">
+					<div class="arrow-hl relative">
+						<h1 class="heroHeadline">{{item.node.headline}}</h1>
+						<sd-headline-arrow></sd-headline-arrow>
+						<div class="bracket-left absolute">
+							<sd-bracket-left></sd-bracket-left>
+						</div>
+						<div class="bracket-right absolute">
+							<sd-bracket-right></sd-bracket-right>
+						</div>
+					</div>
+					<div class="heroText mt-20 w-6/12 ml-40">
+						<p v-html="item.node.bodytext"></p>
+						<g-link to="/kontakt" class="ctr block heroCtr">Mehr erfahren</g-link>
+					</div>
 				</div>
-				<div class="bracket-right absolute">
-					<sd-bracket-right></sd-bracket-right>
+				<div class="heroImage w-2/6">
+					<g-image src="~/assets/images/hero-image.jpg" width="1200" />
 				</div>
 			</div>
-			<div class="heroText mt-20 w-6/12 ml-40">
-				<p>
-					Lorem ipsum dolor sit amet, consectetuer adipiscing
-					elit. Aenean commodo ligula eget dolor. Aenean massa.
-					Cum sociis natoque penatibus et magnis dis parturient
-					montes, nascetur ridiculus mus. Donec quam felis,
-					ultricies nec, pellentesque eu, pretium quis, sem. Nulla
-					consequat massa quis enim.
-				</p>
-				<g-link to="/kontakt" class="ctr block heroCtr">Mehr erfahren</g-link>
-			</div>
-		</div>
-		<div class="heroImage w-1/3">
-			<g-image src="~/assets/images/hero-image.jpg" width="1200" />
 		</div>
 	</div>
 </template>
@@ -34,6 +31,12 @@ import headlineArrow from "~/components/contentElements/heroHome/HeadlineArrow.v
 import bracketLeft from "~/components/contentElements/heroHome/BracketLeft.vue";
 import bracketRight from "~/components/contentElements/heroHome/BracketRight.vue";
 export default {
+	props: {
+		hero: {
+			type: Array,
+			required: true
+		}
+	},
 	components: {
 		"sd-headline-arrow": headlineArrow,
 		"sd-bracket-left": bracketLeft,
