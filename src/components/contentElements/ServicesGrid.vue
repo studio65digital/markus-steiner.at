@@ -1,7 +1,7 @@
 <template>
 	<div class="servicesGrid grid grid-cols-3 gap-12">
 		<div :class="item.node.background" class="card" v-for="item in offer" :key="item.node.id">
-			<g-image :src="item.node.icon" />
+			<g-image class="icon mb-8" :src="item.node.icon" />
 			<h2>{{item.node.offer}}</h2>
 			<p v-html="item.node.bodytext"></p>
 		</div>
@@ -29,5 +29,12 @@ export default {
 h2 {
 	font-size: 3vw;
 	margin-bottom: 2vw;
+}
+.icon {
+	width: 3vw;
+	height: auto;
+	path {
+		fill: red;
+	}
 }
 </style>

@@ -19,7 +19,7 @@ query ContentHome{
                   }
             }
       }
-      offer: allOffer{
+      offer: allOffer (sortBy: "offer", order: ASC){
             edges{
                   node{
                         icon
