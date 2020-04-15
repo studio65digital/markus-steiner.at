@@ -16,12 +16,12 @@ fields:
     schema:
       format: markdown
   label: bodytext
-- name: ctr-text
+- name: ctrtext
   type: text
   config:
     required: false
   label: CTR Text
-- name: ctr-link
+- name: ctrlink
   type: text
   config:
     required: false
