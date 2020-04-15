@@ -11,8 +11,20 @@ module.exports = {
             {
                   use: "@gridsome/source-filesystem",
                   options: {
-                        path: "content/**/*.md",
-                        typeName: "Content",
+                        path: "content/Hero/**/*.md",
+                        typeName: "Hero",
+                        resolveAbsolutePaths: true,
+                        remark: {
+                              externalLinksTarget: "_blank",
+                              externalLinksRel: ["nofollow", "noopener", "noreferrer"]
+                        }
+                  }
+            },
+            {
+                  use: "@gridsome/source-filesystem",
+                  options: {
+                        path: "content//OfferGrid**/*.md",
+                        typeName: "Offer",
                         resolveAbsolutePaths: true,
                         remark: {
                               externalLinksTarget: "_blank",

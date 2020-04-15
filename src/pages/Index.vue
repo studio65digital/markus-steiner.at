@@ -7,8 +7,8 @@
 	</Layout>
 </template>
 <page-query>
-query Content{
-  hero: allContent{
+query ContentHome{
+  hero: allHero{
     edges{
     node{
       headline
@@ -18,6 +18,17 @@ query Content{
       heroimage
     }
   }
+  }
+  offer: allOffer{
+        edges{
+              node{
+                  icon
+                  headline
+                  bodytext
+                  ctrlink
+                  ctrtext  
+              }
+        }
   }
 }
 </page-query>
