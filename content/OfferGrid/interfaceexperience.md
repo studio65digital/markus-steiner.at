@@ -1,7 +1,7 @@
 ---
 ctrtext: Mehr erfahren
-ctrcolor: onred
-background: bg-primary
+ctrcolor: onblack
+background: bg-dark
 icon: "/uploads/icons/diamond.svg"
 offer: Interface & Experience
 bodytext: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
