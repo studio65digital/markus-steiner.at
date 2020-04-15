@@ -1,10 +1,17 @@
 <template>
 	<div class="servicesGrid grid grid-cols-3 gap-12">
-		<div :class="item.node.background" class="card" v-for="item in offer" :key="item.node.id">
+		<g-link
+			:to="item.node.ctrlink"
+			:class="item.node.background"
+			class="card"
+			v-for="item in offer"
+			:key="item.node.id"
+		>
 			<g-image class="icon mb-8" :src="item.node.icon" />
 			<h2>{{item.node.offer}}</h2>
 			<p v-html="item.node.bodytext"></p>
-		</div>
+			<g-link class="ctr" :to="item.node.ctrlink">{{item.node.ctrtext}}</g-link>
+		</g-link>
 	</div>
 </template>
 
@@ -27,8 +34,9 @@ export default {
 	}
 }
 h2 {
-	font-size: 3vw;
+	font-size: 2.7vw;
 	margin-bottom: 2vw;
+	line-height: 1;
 }
 .icon {
 	width: 3vw;
@@ -36,5 +44,8 @@ h2 {
 	path {
 		fill: red;
 	}
+}
+.ctr:after {
+	content: url("../assets/images/ctr-arrow-blue.svg");
 }
 </style>
