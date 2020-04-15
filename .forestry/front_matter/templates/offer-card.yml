@@ -47,5 +47,20 @@ fields:
       file: 
       path: 
   label: ctrcolor
+- name: background
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - bg-primary
+    - bg-secondary
+    - bg-dark
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Background
 pages:
 - content/Offer Grid/frontenddev.md
