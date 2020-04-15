@@ -13,7 +13,8 @@ query Content{
     node{
       headline
       bodytext
-      ctr
+      ctrlink
+      ctrtext
       heroimage
     }
   }
