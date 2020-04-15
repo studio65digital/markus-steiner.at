@@ -15,7 +15,7 @@
 					</div>
 					<div class="heroText mt-20 w-6/12 ml-40">
 						<p v-html="item.node.bodytext"></p>
-						<g-link to="/kontakt" class="ctr block heroCtr">Mehr erfahren</g-link>
+						<g-link :to="item.node.ctrlink" class="ctr block heroCtr">Mehr erfahren</g-link>
 					</div>
 				</div>
 				<div class="heroImage w-2/6">
