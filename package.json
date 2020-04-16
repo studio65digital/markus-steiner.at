@@ -11,7 +11,9 @@
             "@gridsome/source-filesystem": "^0.6.2",
             "@gridsome/transformer-remark": "^0.5.0",
             "gridsome": "^0.7.0",
-            "tailwindcss": "^1.2.0"
+            "swiper": "^5.3.7",
+            "tailwindcss": "^1.2.0",
+            "vue-awesome-swiper": "^4.1.0"
       },
       "devDependencies": {
             "gridsome-plugin-tailwindcss": "^2.2.43",
