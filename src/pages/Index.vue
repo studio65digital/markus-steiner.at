@@ -4,7 +4,7 @@
 		<div class="mega-container">
 			<sd-services-grid :offer="$page.offer.edges" />
 		</div>
-		<sd-referenzen-slider>:referenz="$page.referenz.edges"</sd-referenzen-slider>
+		<sd-referenzen-slider :referenz="$page.referenz.edges"></sd-referenzen-slider>
 	</Layout>
 </template>
 <page-query>
