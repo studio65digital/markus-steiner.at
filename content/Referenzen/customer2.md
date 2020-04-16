@@ -1,6 +1,6 @@
 ---
 mainimage: "/uploads/landscapedumm1.jpg"
-customer: Meditationsschule Linz
+customer: Riverside
 project: UI/UX Design & TYPO3 Website
 techstack:
 - gsap
