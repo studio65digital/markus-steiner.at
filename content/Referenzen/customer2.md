@@ -1,7 +1,7 @@
 ---
 mainimage: "/uploads/landscapedumm1.jpg"
 customer: Riverside
-project: Super Sweet Shopware E-commerce Bla Bla
+project: Super Sweet Shopware
 techstack:
 - gsap
 - sass
