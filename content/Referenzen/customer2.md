@@ -1,7 +1,7 @@
 ---
 mainimage: "/uploads/landscapedumm1.jpg"
 customer: Riverside
-project: UI/UX Design & TYPO3 Website
+project: Super Sweet Shopware E-commerce Bla Bla
 techstack:
 - gsap
 - sass
