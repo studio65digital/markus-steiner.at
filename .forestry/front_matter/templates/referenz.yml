@@ -60,5 +60,5 @@ fields:
     required: false
   label: Slug
 pages:
-- content/Referenzen/file.md
+- content/Referenzen/customer2.md
 - content/Referenzen/meditationsschule.md
