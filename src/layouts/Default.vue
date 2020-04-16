@@ -45,6 +45,33 @@ export default {
 	font-weight: 800;
 	font-style: normal;
 }
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("../assets/fonts/Gilroy-Light.eot");
+	src: url("../assets/fonts/Gilroy-Light.eot?#iefix")
+			format("embedded-opentype"),
+		url("../assets/fonts/Gilroy-Light.woff2") format("woff2"),
+		url("../assets/fonts/Gilroy-Light.woff") format("woff"),
+		url("../assets/fonts/Gilroy-Light.ttf") format("truetype"),
+		url("../assets/fonts/Gilroy-Light.svg#Gilroy-Light") format("svg");
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("../assets/fonts/Gilroy-Bold.eot");
+	src: url("../assets/fonts/Gilroy-Bold.eot?#iefix")
+			format("embedded-opentype"),
+		url("../assets/fonts/Gilroy-Bold.woff2") format("woff2"),
+		url("../assets/fonts/Gilroy-Bold.woff") format("woff"),
+		url("../assets/fonts/Gilroy-Bold.ttf") format("truetype"),
+		url("../assets/fonts/Gilroy-Bold.svg#Gilroy-Bold") format("svg");
+	font-weight: bold;
+	font-style: normal;
+}
+
 body {
 	text-rendering: geometricPrecision;
 	-webkit-font-smoothing: antialiased;

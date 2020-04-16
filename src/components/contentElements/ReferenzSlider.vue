@@ -7,10 +7,16 @@
 						<div class="left-part">
 							<span>{{item.node.customer}}</span>
 							<h2>{{item.node.project}}</h2>
-							<a :href="item.node.url" rel="noopnener noreferrer" target="_blank">Website besuchen</a>
+							<a
+								class="ext-link"
+								:href="item.node.url"
+								rel="noopnener noreferrer"
+								target="_blank"
+							>Website besuchen</a>
 						</div>
 					</swiper-slide>
 					<div class="swiper-pagination" slot="pagination"></div>
+					<div class="swiper-button-next" slot="button-next"></div>
 				</swiper>
 			</div>
 			<div class="imageSlides w-7/12">
@@ -45,19 +51,21 @@ export default {
 	data() {
 		return {
 			swiperOptionTop: {
+				loop: true,
 				loopedSlides: 5, // looped slides should be the same
 				spaceBetween: 30,
 				noSwiping: true,
+				effect: "fade",
 				pagination: {
 					el: ".swiper-pagination",
 					type: "fraction"
 				},
 				navigation: {
-					nextEl: ".swiper-button-next",
-					prevEl: ".swiper-button-prev"
+					nextEl: ".swiper-button-next"
 				}
 			},
 			swiperOptionThumbs: {
+				loop: true,
 				loopedSlides: 5, // looped slides should be the same
 				spaceBetween: 10,
 				noSwiping: true,
@@ -101,6 +109,21 @@ export default {
 	h2 {
 		font-size: 2.7vw;
 	}
+	span {
+		font-family: "Gilroy";
+		font-weight: 300;
+		opacity: 0.5;
+		font-size: 1vw;
+		padding-left: 7vw;
+	}
+	h2 {
+		margin-top: 4vw;
+		margin-bottom: 4vw;
+	}
+	.ext-link {
+		font-family: "Gilroy";
+		font-weight: 700;
+	}
 }
 
 .slider-backdrop {
@@ -118,6 +141,22 @@ export default {
 	z-index: -1;
 }
 .swiper-pagination-fraction {
+	top: 2px;
+	bottom: auto;
 	color: white;
+	font-family: "Gilroy";
+	font-weight: 300;
+	font-size: 1vw;
+	text-align: left;
+	font-weight: 700;
+}
+
+.swiper-pagination-fraction:after {
+	content: "";
+	height: 1px;
+	background: white;
+	width: 3vw;
+	display: inline-block;
+	margin-left: 1vw;
 }
 </style>
