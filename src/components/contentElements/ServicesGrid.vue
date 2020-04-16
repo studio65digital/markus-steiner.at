@@ -36,7 +36,7 @@ export default {
 }
 .card:hover {
 	background-color: theme("colors.secondary");
-	box-shadow: 0 15px 30px -12px #333;
+	box-shadow: 0 20px 40px -12px #828282;
 	transform: translateY(-10px);
 }
 h2 {
