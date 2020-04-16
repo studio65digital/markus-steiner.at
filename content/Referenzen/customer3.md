@@ -1,6 +1,6 @@
 ---
 mainimage: "/uploads/landscapedumm2.jpg"
-customer: Meditationsschule Linz
+customer: Boatlake
 project: UI/UX Design & TYPO3 Website
 techstack:
 - gsap
