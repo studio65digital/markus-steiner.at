@@ -16,7 +16,19 @@
 						</div>
 					</swiper-slide>
 					<div class="swiper-pagination" slot="pagination"></div>
-					<div class="swiper-button-next" slot="button-next"></div>
+					<div class="swiper-button-next" slot="button-next">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="swiper-next"
+							width="23"
+							height="17"
+							viewBox="0 0 23 17"
+						>
+							<path
+								d="M22.817,8.038,15.358.191a.6.6,0,0,0-.879,0,.679.679,0,0,0,0,.925l6.4,6.73H.622a.655.655,0,0,0,0,1.308H20.876l-6.4,6.73a.679.679,0,0,0,0,.925.6.6,0,0,0,.88,0l7.459-7.847a.679.679,0,0,0,0-.925Z"
+							/>
+						</svg>
+					</div>
 				</swiper>
 			</div>
 			<div class="imageSlides w-7/12">
@@ -55,7 +67,6 @@ export default {
 				loopedSlides: 5, // looped slides should be the same
 				spaceBetween: 30,
 				noSwiping: true,
-				effect: "fade",
 				pagination: {
 					el: ".swiper-pagination",
 					type: "fraction"
@@ -99,7 +110,7 @@ export default {
 	}
 }
 .infoSlides {
-	padding: 0 5.555vw;
+	padding: 0 8.555vw 0 5.555vw;
 	h2,
 	p,
 	span,
@@ -141,6 +152,7 @@ export default {
 	z-index: -1;
 }
 .swiper-pagination-fraction {
+	display: inline-block;
 	top: 2px;
 	bottom: auto;
 	color: white;
@@ -149,6 +161,7 @@ export default {
 	font-size: 1vw;
 	text-align: left;
 	font-weight: 700;
+	width: 7vw;
 }
 
 .swiper-pagination-fraction:after {
@@ -158,5 +171,19 @@ export default {
 	width: 3vw;
 	display: inline-block;
 	margin-left: 1vw;
+	position: relative;
+	bottom: 0.4vw;
+}
+.swiper-button-next {
+	bottom: 0;
+	top: auto;
+}
+.swiper-button-next:after {
+	content: "";
+}
+.swiper-next {
+	path {
+		fill: white;
+	}
 }
 </style>

@@ -121,4 +121,8 @@ p,
 .mega-container {
 	padding: 5.555vw;
 }
+.swiper-pagination-current {
+	display: inline-block;
+	min-width: 15px;
+}
 </style>
