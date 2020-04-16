@@ -1,7 +1,7 @@
 ---
-mainimage: ''
-customer: ''
-project: ''
+mainimage: "/uploads/medidummy.jpg"
+customer: Meditationsschule Linz
+project: UI/UX Design & TYPO3 Website
 techstack:
 - gsap
 - sass
