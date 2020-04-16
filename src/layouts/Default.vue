@@ -33,22 +33,6 @@ export default {
 }
 
 @font-face {
-	font-family: "Merriweather";
-	src: url("../assets/fonts/Merriweather-LightItalic.eot");
-	src: url("../assets/fonts/Merriweather-LightItalic.eot?#iefix")
-			format("embedded-opentype"),
-		url("../assets/fonts/Merriweather-LightItalic.woff2")
-			format("woff2"),
-		url("../assets/fonts/Merriweather-LightItalic.woff") format("woff"),
-		url("../assets/fonts/Merriweather-LightItalic.ttf")
-			format("truetype"),
-		url("../assets/fonts/Merriweather-LightItalic.svg#Merriweather-LightItalic")
-			format("svg");
-	font-weight: 300;
-	font-style: italic;
-}
-
-@font-face {
 	font-family: "Gilroy";
 	src: url("../assets/fonts/Gilroy-ExtraBold.eot");
 	src: url("../assets/fonts/Gilroy-ExtraBold.eot?#iefix")
@@ -71,7 +55,14 @@ h1,
 h2 {
 	font-family: "Gilroy";
 	font-weight: 800;
+}
+h1 {
 	line-height: 0.9;
+}
+h2 {
+	font-size: 2.7vw;
+	margin-bottom: 2vw;
+	line-height: 1.1;
 }
 p,
 .ctr {

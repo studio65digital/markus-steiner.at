@@ -39,11 +39,7 @@ export default {
 	box-shadow: 0 20px 40px -12px #828282;
 	transform: translateY(-10px);
 }
-h2 {
-	font-size: 2.7vw;
-	margin-bottom: 2vw;
-	line-height: 1;
-}
+
 .icon {
 	width: 3vw;
 	height: auto;
@@ -58,3 +54,6 @@ h2 {
 	content: url("../../assets/images/ctr-arrow-red.svg");
 }
 </style>
+
+
+
