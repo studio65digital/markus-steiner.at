@@ -1,7 +1,7 @@
 ---
 mainimage: "/uploads/landscapedumm2.jpg"
 customer: Boatlake
-project: UI/UX Design & TYPO3 Website
+project: A Super Duper JAMStack & Gatsby
 techstack:
 - gsap
 - sass
