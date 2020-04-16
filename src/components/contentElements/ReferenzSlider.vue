@@ -2,11 +2,16 @@
 	<div class="slider-backdrop relative">
 		<div id="referenzSlider" class="flex items-center">
 			<div class="infoSlides w-5/12">
-				<swiper class="swiper swiper-no-swiping gallery-top" :options="swiperOptionTop" ref="swiperTop">
+				<swiper
+					class="swiper swiper-no-swiping gallery-top"
+					:options="swiperOptionTop"
+					ref="swiperTop"
+					@transitionStart="onSwiperSlideChangeTransitionStart"
+				>
 					<swiper-slide v-for="item in referenz" :key="item.node.id">
 						<div class="left-part">
 							<span>{{item.node.customer}}</span>
-							<h2>{{item.node.project}}</h2>
+							<h2 class="project-headline">{{item.node.project}}</h2>
 							<a
 								class="ext-link"
 								:href="item.node.url"
@@ -66,6 +71,7 @@ export default {
 				loop: true,
 				loopedSlides: 5, // looped slides should be the same
 				spaceBetween: 30,
+				speed: 700,
 				noSwiping: true,
 				pagination: {
 					el: ".swiper-pagination",
@@ -92,6 +98,11 @@ export default {
 			swiperTop.controller.control = swiperThumbs;
 			swiperThumbs.params.control = swiperTop;
 		});
+	},
+	methods: {
+		onSwiperSlideChangeTransitionStart() {
+			document.querySelector(".project-headline").add("fadeout");
+		}
 	}
 };
 </script>
@@ -184,6 +195,41 @@ export default {
 .swiper-next {
 	path {
 		fill: white;
+		transition: all 0.3s ease-in-out;
 	}
+}
+.swiper-button-next {
+	width: 3vw;
+	height: 3vw;
+	border: 1px solid white;
+	border-radius: 50%;
+	background: theme("colors.dark");
+	transition: all 0.3s ease-in-out;
+}
+.swiper-button-next:hover {
+	background: theme("colors.primary");
+	border-color: theme("colors.primary");
+	path {
+		fill: theme("colors.dark");
+	}
+}
+.swiper-button-next:focus {
+	outline: none;
+	box-shadow: none;
+}
+.swiper-slide-next .project-headline {
+	opacity: 0;
+	margin-left: 3rem;
+}
+.swiper-slide-active .project-headline {
+	opacity: 1;
+	transition: all 1s;
+	transition-delay: 0.6s;
+	margin-left: 0rem;
+}
+.swiper-slide-prev .project-headline {
+	opacity: 0;
+	transition: all 0.5s;
+	margin-left: -5rem;
 }
 </style>
