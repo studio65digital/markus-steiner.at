@@ -1,5 +1,5 @@
 ---
-mainimage: "/uploads/medidummy.jpg"
+mainimage: "/uploads/landscapedumm2.jpg"
 customer: Meditationsschule Linz
 project: UI/UX Design & TYPO3 Website
 techstack:
