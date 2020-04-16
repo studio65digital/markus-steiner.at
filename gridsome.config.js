@@ -31,6 +31,18 @@ module.exports = {
                               externalLinksRel: ["nofollow", "noopener", "noreferrer"]
                         }
                   }
+            },
+            {
+                  use: "@gridsome/source-filesystem",
+                  options: {
+                        path: "content/Referenzen/**/*.md",
+                        typeName: "Referenzen",
+                        resolveAbsolutePaths: true,
+                        remark: {
+                              externalLinksTarget: "_blank",
+                              externalLinksRel: ["nofollow", "noopener", "noreferrer"]
+                        }
+                  }
             }
       ]
 };
