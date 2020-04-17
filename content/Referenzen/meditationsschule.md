@@ -3,11 +3,11 @@ mainimage: "/uploads/landscapedumm3.jpg"
 customer: Meditationsschule Linz
 project: UI/UX Design & TYPO3 Website
 techstack:
-- gsap
-- sass
-- js
-- bootstrap
 - typo3
+- bootstrap
+- js
+- sass
+- gsap
 shortdescription: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
   commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis
   dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
