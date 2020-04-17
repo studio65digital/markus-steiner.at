@@ -73,6 +73,7 @@
 					<swiper-slide class="image" v-for="item in referenz" :key="item.node.id">
 						<g-image :src="item.node.mainimage"></g-image>
 						<div class="techstack">
+							<span class="block mb-2 font-bold">Tech Stack:</span>
 							<div class="stack-item" :class="tech" v-for="tech in item.node.techstack" :key="tech"></div>
 							<!-- <div ></div> -->
 						</div>
@@ -331,94 +332,140 @@ export default {
 		}
 	}
 
+	.techstack {
+		position: absolute;
+		bottom: 0;
+		background: #f3f3f3;
+		padding: 1vw;
+		transition: opacity 0.5s;
+
+		.stack-item {
+			transition: opacity 0.5s;
+			width: 25px;
+			height: 25px;
+			opacity: 0.5;
+			margin-right: 20px;
+			display: inline-block;
+		}
+	}
+
 	.swiper-slide-next {
 		img {
 			opacity: 0.2;
+		}
+		.stack-item,
+		.techstack {
+			opacity: 0;
 		}
 	}
 	.swiper-slide-active {
 		img {
 			opacity: 1;
 		}
-	}
-	.techstack {
-		position: absolute;
-		bottom: 0;
-		background: #f3f3f3;
-		padding: 1rem;
+		.techstack {
+			opacity: 1;
+			transition-delay: 0.6s;
+		}
 		.stack-item {
-			display: inline-block;
-			margin-right: 10px;
+			opacity: 0.5;
+			transition-delay: 0.8s;
+		}
+		.stack-item:nth-of-type(1) {
+			transition-delay: 0.9s;
+		}
+		.stack-item:nth-of-type(2) {
+			transition-delay: 1s;
+		}
+		.stack-item:nth-of-type(3) {
+			transition-delay: 1.1s;
+		}
+		.stack-item:nth-of-type(4) {
+			transition-delay: 1.2s;
+		}
+		.stack-item:nth-of-type(5) {
+			transition-delay: 1.3s;
+		}
+		.stack-item:nth-of-type(6) {
+			transition-delay: 1.4s;
+		}
+		.stack-item:nth-of-type(7) {
+			transition-delay: 1.5s;
 		}
 	}
-}
+	.swiper-slide-prev {
+		img {
+			opacity: 0.2;
+		}
+		.stack-item,
+		.techstack {
+			opacity: 0;
+		}
+	}
 
-/////// Techstack
-.stack-item {
-	width: 25px;
-	height: 25px;
-}
-.angular:before {
-	content: url(../../assets/images/techstack/angular.svg);
-}
-.bootstrap:before {
-	content: url(../../assets/images/techstack/bootstrap.svg);
-}
-.craftcms:before {
-	content: url(../../assets/images/techstack/craftcms.svg);
-}
-.css3:before {
-	content: url(../../assets/images/techstack/css3.svg);
-}
-.drupal:before {
-	content: url(../../assets/images/techstack/drupal.svg);
-}
-.gatsby:before {
-	content: url(../../assets/images/techstack/gatsby.svg);
-}
-.graphql:before {
-	content: url(../../assets/images/techstack/graphql.svg);
-}
-.gsap:before {
-	content: url(../../assets/images/techstack/gsap.svg);
-}
-.html5:before {
-	content: url(../../assets/images/techstack/html5.svg);
-}
-.angular:before {
-	content: url(../../assets/images/techstack/angular.svg);
-}
-.jquery:before {
-	content: url(../../assets/images/techstack/jquery.svg);
-}
-.js:before {
-	content: url(../../assets/images/techstack/js.svg);
-}
-.react:before {
-	content: url(../../assets/images/techstack/react.svg);
-}
-.sass:before {
-	content: url(../../assets/images/techstack/sass.svg);
-}
-.shopware:before {
-	content: url(../../assets/images/techstack/shopware.svg);
-}
-.tailwindcss:before {
-	content: url(../../assets/images/techstack/tailwindcss.svg);
-}
-.typo3:before {
-	content: url(../../assets/images/techstack/typo3.svg);
-}
-.vue:before {
-	content: url(../../assets/images/techstack/vue.svg);
-}
-.vuetify:before {
-	content: url(../../assets/images/techstack/vuetify.svg);
-}
-.woo:before {
-	content: url(../../assets/images/techstack/woo.svg);
-}
-.wordpress:before {
-	content: url(../../assets/images/techstack/wordpress.svg);
+	/////// Techstack
+
+	.angular:before {
+		content: url(../../assets/images/techstack/angular.svg);
+	}
+	.bootstrap:before {
+		content: url(../../assets/images/techstack/bootstrap.svg);
+	}
+	.craftcms:before {
+		content: url(../../assets/images/techstack/craftcms.svg);
+	}
+	.css3:before {
+		content: url(../../assets/images/techstack/css3.svg);
+	}
+	.drupal:before {
+		content: url(../../assets/images/techstack/drupal.svg);
+	}
+	.gatsby:before {
+		content: url(../../assets/images/techstack/gatsby.svg);
+	}
+	.graphql:before {
+		content: url(../../assets/images/techstack/graphql.svg);
+	}
+	.gsap:before {
+		content: url(../../assets/images/techstack/gsap.svg);
+	}
+	.html5:before {
+		content: url(../../assets/images/techstack/html5.svg);
+	}
+	.angular:before {
+		content: url(../../assets/images/techstack/angular.svg);
+	}
+	.jquery:before {
+		content: url(../../assets/images/techstack/jquery.svg);
+	}
+	.js:before {
+		content: url(../../assets/images/techstack/js.svg);
+	}
+	.react:before {
+		content: url(../../assets/images/techstack/react.svg);
+	}
+	.sass:before {
+		content: url(../../assets/images/techstack/sass.svg);
+	}
+	.shopware:before {
+		content: url(../../assets/images/techstack/shopware.svg);
+	}
+	.tailwindcss:before {
+		content: url(../../assets/images/techstack/tailwindcss.svg);
+	}
+	.typo3:before {
+		content: url(../../assets/images/techstack/typo3.svg);
+	}
+	.vue:before {
+		content: url(../../assets/images/techstack/vue.svg);
+	}
+	.vuetify:before {
+		content: url(../../assets/images/techstack/vuetify.svg);
+	}
+	.woo:before {
+		content: url(../../assets/images/techstack/woo.svg);
+	}
+	.wordpress:before {
+		content: url(../../assets/images/techstack/wordpress.svg);
+	}
 }
 </style>
