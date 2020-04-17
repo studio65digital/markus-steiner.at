@@ -73,7 +73,12 @@
 					<swiper-slide class="imagedf" v-for="item in referenz" :key="item.node.id">
 						<g-image :src="item.node.mainimage"></g-image>
 						<div class="techstack">
-							<span :class="tech" v-for="tech in item.node.techstack" :key="tech"></span>
+							<g-image
+								:src="'../src/assets/images/techstack/' + tech + '.svg'"
+								:class="tech"
+								v-for="tech in item.node.techstack"
+								:key="tech"
+							></g-image>
 						</div>
 					</swiper-slide>
 				</swiper>
