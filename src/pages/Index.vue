@@ -15,15 +15,6 @@
 		<br />
 		<br />
 		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
 	</Layout>
 </template>
 <page-query>
