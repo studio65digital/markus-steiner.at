@@ -39,7 +39,7 @@ query ContentHome{
                         ctrlink
                         ctrtext
                         ctrcolor
-                        background  
+                        backgroundimage
                   }
             }
       }
