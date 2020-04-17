@@ -19,7 +19,7 @@
 					</div>
 				</div>
 				<div class="heroImage w-2/6">
-					<g-image src="~/assets/images/hero-image.jpg" width="1200" />
+					<g-image :src="item.node.heroimage" width="1200" />
 				</div>
 			</div>
 		</div>
