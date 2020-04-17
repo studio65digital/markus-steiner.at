@@ -8,5 +8,6 @@ bodytext: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commo
   montes
 ctrlink: "/leistungen"
 background: bg-dark
+backgroundimage: "/uploads/developementFLuid.jpg"
 
 ---
