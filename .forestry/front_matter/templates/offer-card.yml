@@ -47,21 +47,11 @@ fields:
       file: 
       path: 
   label: ctrcolor
-- name: background
-  type: select
-  default: []
+- name: backgroundimage
+  type: file
   config:
-    required: false
-    options:
-    - bg-primary
-    - bg-secondary
-    - bg-dark
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
-  label: Background
+    maxSize: 250
+  label: BackgroundImage
 pages:
 - content/OfferGrid/frontenddev.md
 - content/OfferGrid/interfaceexperience.md
