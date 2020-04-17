@@ -78,6 +78,9 @@ body {
 	-moz-osx-font-smoothing: antialiased;
 	color: theme("colors.dark");
 }
+#app {
+	padding-top: 8.2vw;
+}
 h1,
 h2 {
 	font-family: "Gilroy";
@@ -124,5 +127,8 @@ p,
 .swiper-pagination-current {
 	display: inline-block;
 	min-width: 15px;
+}
+html.noscroll {
+	overflow: hidden;
 }
 </style>

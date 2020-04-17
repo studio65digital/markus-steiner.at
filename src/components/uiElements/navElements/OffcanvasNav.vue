@@ -1,5 +1,5 @@
 <template>
-	<div class="nav fixed w-full bg-secondary inset-0 z-40 flex items-center">
+	<div class="nav fixed w-full bg-dark inset-0 z-40 flex items-center">
 		<div class="left-nav w-3/5">
 			<div class="left-content text-white w-1/2 mx-auto">
 				<p>

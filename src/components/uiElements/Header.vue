@@ -1,5 +1,5 @@
 <template>
-	<header class="flex py-16 flex-row justify-between items-center">
+	<header id="nav" class="flex flex-row justify-between items-center">
 		<!-- Logos (Std and Invers) -->
 		<g-link to="/" class="relative z-50 logo-wrapper block">
 			<transition name="fade">
@@ -18,13 +18,13 @@
 			<div class="actions relative z-50">
 				<!-- Heartburger slides in Nav -->
 				<transition name="fade">
-					<div v-if="!this.show" class="navtoggle absolute top-0 left-0" @click="togglenav">
+					<div v-if="!this.show" class="navtoggle absolute top-0 left-0" @click="toggleNav()">
 						<sd-heart-burger></sd-heart-burger>
 					</div>
 				</transition>
 				<!-- Heartburger slides in Nav -->
 				<transition name="fade">
-					<div class="closer absolute top-0 left-0" v-if="this.show" @click="togglenav">
+					<div class="closer absolute top-0 left-0" v-if="this.show" @click="toggleNav()">
 						<sd-close-arrow></sd-close-arrow>
 					</div>
 				</transition>
@@ -56,13 +56,33 @@ export default {
 	},
 	data() {
 		return {
-			show: false
+			show: false,
+			noscroll: false
 		};
 	},
 	methods: {
-		togglenav: function(e) {
+		toggleNav(e) {
 			this.show = !this.show;
+			this.noscroll = !this.noscroll;
 		}
+	},
+	mounted() {
+		window.document.onscroll = () => {
+			let navBar = document.getElementById("nav");
+			if (window.scrollY > 0) {
+				navBar.classList.add("sticky");
+			} else {
+				navBar.classList.remove("sticky");
+			}
+		};
+	},
+	watch: {
+		noscroll() {
+			document.documentElement.classList.toggle("noscroll");
+		}
+	},
+	beforeMount() {
+		document.documentElement.classList.remove("noscroll");
 	}
 };
 </script>
@@ -71,7 +91,21 @@ export default {
 header {
 	padding-left: 5.555vw;
 	padding-right: 5.555vw;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	transition: all 0.5s;
+	z-index: 9999;
+	padding-top: 3vw;
+	padding-bottom: 3vw;
 }
+header.sticky {
+	background-color: white;
+	padding-top: 1vw;
+	padding-bottom: 1vw;
+	border-bottom: 1px solid #eaeaea;
+}
+
 .slide-fade-enter-active {
 	transition: all 0.6s cubic-bezier(1, 0.01, 0.35, 0.62);
 }
