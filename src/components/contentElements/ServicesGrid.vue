@@ -7,6 +7,7 @@
 			v-for="item in offer"
 			:key="item.node.id"
 		>
+			<g-image :src="item.node.backgroundimage" />
 			<g-image class="icon mb-8" :src="item.node.icon" />
 			<h2>{{item.node.offer}}</h2>
 			<p v-html="item.node.bodytext"></p>
