@@ -17,5 +17,6 @@ shortdescription: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aene
   Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.
 url: https://www.meditationsschule-linz.at
 slug: "/meditationsschule"
+urltext: Mehr zum Projekt
 
 ---
