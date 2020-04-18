@@ -18,5 +18,6 @@ shortdescription: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aene
 url: https://www.meditationsschule-linz.at
 slug: "/meditationsschule"
 title: ''
+urltext: Zur Shopware Demo
 
 ---
