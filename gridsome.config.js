@@ -44,5 +44,17 @@ module.exports = {
                         }
                   }
             }
+            {
+                  use: "@gridsome/source-filesystem",
+                  options: {
+                        path: "content/About/**/*.md",
+                        typeName: "About",
+                        resolveAbsolutePaths: true,
+                        remark: {
+                              externalLinksTarget: "_blank",
+                              externalLinksRel: ["nofollow", "noopener", "noreferrer"]
+                        }
+                  }
+            }
       ]
 };

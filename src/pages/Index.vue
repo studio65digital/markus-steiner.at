@@ -58,6 +58,19 @@ query ContentHome{
           }
         }
       }
+      about: allReferenzen{
+        edges{
+          node{
+            pretitle
+            pretitle2
+            name
+            shortdescription
+            slug
+            portrait
+            
+          }
+        }
+      }
 }
 </page-query>
 <script>
