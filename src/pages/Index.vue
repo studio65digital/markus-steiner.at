@@ -5,6 +5,7 @@
 			<sd-services-grid :offer="$page.offer.edges" />
 		</div>
 		<sd-referenzen-slider :referenz="$page.referenz.edges"></sd-referenzen-slider>
+		<sd-about-me :about="$page.about.edges"></sd-about-me>
 
 		<br />
 		<br />
@@ -58,18 +59,17 @@ query ContentHome{
           }
         }
       }
-      about: allAbout{
-        edges{
-          node{
-            pretitle
-            pretitle2
-            name
-            shortdescription
-            slug
-            portrait
-            
-          }
-        }
+       about: allAbout{
+            edges{
+                  node{
+                    pretitle 
+                    pretitle2
+                    myname
+                    kurzbeschreibung
+                    slug
+                    portrait
+                  }
+            }
       }
 }
 </page-query>
@@ -77,11 +77,13 @@ query ContentHome{
 import homeHero from "../components/contentElements/heroHome/HeroHome.vue";
 import servicesGrid from "../components/contentElements/ServicesGrid.vue";
 import referenzSlider from "../components/contentElements/ReferenzSlider.vue";
+import aboutMe from "../components/contentElements/AboutMe.vue";
 export default {
 	components: {
 		"sd-home-hero": homeHero,
 		"sd-services-grid": servicesGrid,
-		"sd-referenzen-slider": referenzSlider
+		"sd-referenzen-slider": referenzSlider,
+		"sd-about-me": aboutMe
 	}
 };
 </script>
