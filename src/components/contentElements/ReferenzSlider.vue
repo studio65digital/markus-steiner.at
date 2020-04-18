@@ -31,7 +31,7 @@
 										</g>
 									</g>
 								</svg>
-								Website besuchen
+								{{item.node.urltext}}
 							</a>
 						</div>
 					</swiper-slide>
