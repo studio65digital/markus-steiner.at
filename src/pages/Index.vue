@@ -58,7 +58,7 @@ query ContentHome{
           }
         }
       }
-      about: allReferenzen{
+      about: allAbout{
         edges{
           node{
             pretitle
