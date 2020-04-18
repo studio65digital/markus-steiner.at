@@ -53,7 +53,12 @@ fields:
     wysiwyg: false
     schema:
       format: markdown
-  label: ProjeKt URL
+  label: Projekt URL
+- name: urltext
+  type: text
+  config:
+    required: false
+  label: URL Text
 - name: slug
   type: text
   config:
