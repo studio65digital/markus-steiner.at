@@ -51,6 +51,7 @@ query ContentHome{
             project
             shortdescription
             url
+            urltext
             slug
             techstack
             
