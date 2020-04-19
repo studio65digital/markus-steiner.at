@@ -2,16 +2,25 @@
 	<div class="layout">
 		<sd-header></sd-header>
 		<!-- <sd-nav-main></sd-nav-main> -->
-		<slot />
+
+		<transition name="fade" appear>
+			<main>
+				<!-- a wrapper for slot is needed -->
+				<slot />
+			</main>
+		</transition>
+		<sd-footer></sd-footer>
 	</div>
 </template>
 <script>
 import header from "../components/uiElements/Header.vue";
+import footer from "../components/uiElements/Footer.vue";
 // import navMain from "../components/uiElements/NavMain.vue";
 
 export default {
 	components: {
-		"sd-header": header
+		"sd-header": header,
+		"sd-footer": footer
 		//"sd-nav-main": navMain
 	}
 };
@@ -71,13 +80,24 @@ export default {
 	font-weight: bold;
 	font-style: normal;
 }
+.fade-enter-active {
+	transition: opacity 0.7s;
+}
 
+.fade-enter {
+	opacity: 0;
+}
 body {
 	text-rendering: geometricPrecision;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: antialiased;
 	color: theme("colors.dark");
 	font-family: "Gilroy";
+}
+*::selection {
+	background: rgba(237, 102, 99, 0.99);
+	color: theme("colors.dark");
+	opacity: 1;
 }
 #app {
 	padding-top: 8.2vw;

@@ -15,7 +15,7 @@
 					</div>
 				</div>
 			</div>
-
+			<!--TODO: Refactor into Components -->
 			<div class="grid grid-cols-3 gap-24">
 				<div class="left">
 					<h4>JAM Stack & Headless CMS</h4>
@@ -345,7 +345,7 @@ export default {
 </script>
 <style scoped lang="scss">
 #fullstack {
-	margin: 10vw 5.555vw;
+	margin: 10vw 5.555vw 0 5.555vw;
 	padding: 3vw 5.5vw;
 }
 h3 {
