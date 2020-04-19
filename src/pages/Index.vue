@@ -5,7 +5,7 @@
 			<sd-services-grid :offer="$page.offer.edges" />
 		</div>
 		<sd-referenzen-slider :referenz="$page.referenz.edges"></sd-referenzen-slider>
-		<sd-about-me :about="$page.about.edges"></sd-about-me>
+		<!-- <sd-about-me :about="$page.about.edges"></sd-about-me> -->
 	</Layout>
 </template>
 <page-query>
@@ -72,8 +72,8 @@ export default {
 	components: {
 		"sd-home-hero": homeHero,
 		"sd-services-grid": servicesGrid,
-		"sd-referenzen-slider": referenzSlider,
-		"sd-about-me": aboutMe
+		"sd-referenzen-slider": referenzSlider
+		// "sd-about-me": aboutMe
 	}
 };
 </script>
