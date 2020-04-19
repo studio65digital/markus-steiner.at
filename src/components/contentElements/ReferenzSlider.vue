@@ -84,9 +84,6 @@
 	</div>
 </template>
 <script >
-import { Swiper, SwiperSlide } from "vue-awesome-swiper";
-import "swiper/css/swiper.css";
-
 export default {
 	props: {
 		referenz: {
@@ -94,10 +91,7 @@ export default {
 			required: true
 		}
 	},
-	components: {
-		Swiper,
-		SwiperSlide
-	},
+
 	data() {
 		return {
 			swiperOptionTop: {
