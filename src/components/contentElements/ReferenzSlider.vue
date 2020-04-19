@@ -146,6 +146,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+/////////////
 .imageSlides {
 	width: 60vw;
 	overflow: hidden;
