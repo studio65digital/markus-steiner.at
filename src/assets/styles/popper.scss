@@ -1,0 +1,249 @@
+
+
+.popper {
+	width: auto;
+	background-color: #fafafa;
+	color: #212121;
+	text-align: center;
+	padding: 2px;
+	display: inline-block;
+	border-radius: 3px;
+	position: absolute;
+	font-size: 14px;
+	border: 1px #ebebeb solid;
+	z-index: 200000;
+	-moz-box-shadow: rgb(58, 58, 58) 0 0 6px 0;
+	-webkit-box-shadow: rgb(58, 58, 58) 0 0 6px 0;
+      box-shadow: rgb(58, 58, 58) 0 0 6px 0;
+      font-weight:700;
+      color:white;
+
+}
+a.top{
+      cursor:default
+}
+.popper .popper__arrow {
+	width: 0;
+	height: 0;
+	border-style: solid;
+	position: absolute;
+	margin: 5px;
+}
+.popper {
+	margin-bottom: 5px;
+}
+.popper .popper__arrow {
+	border-width: 5px 5px 0 5px;
+	border-color: #fafafa transparent transparent transparent;
+	bottom: -5px;
+	left: calc(50% - 5px);
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.vue {
+	.popper {
+		background: #4fc08d;
+		border-color: #4fc08d;
+	}
+	.popper__arrow {
+		border-color: #4fc08d transparent transparent transparent !important;
+	}
+}
+.gatsby {
+	.popper {
+		background: #663399;
+            border-color: #663399;
+	}
+	.popper__arrow {
+		border-color: #663399 transparent transparent transparent !important;
+	}
+}
+.gridsome {
+	.popper {
+		background: #00a672;
+            border-color: #00a672;
+	}
+	.popper__arrow {
+		border-color: #00a672 transparent transparent transparent !important;
+	}
+}
+.react {
+	.popper {
+		background: #61dafb;
+            border-color: #61dafb;
+	}
+	.popper__arrow {
+		border-color: #61dafb transparent transparent transparent !important;
+	}
+}
+.graphql {
+	.popper {
+		background: #e10098;
+            border-color: #e10098;
+	}
+	.popper__arrow {
+		border-color: #e10098 transparent transparent transparent !important;
+	}
+}
+.vuetify {
+	.popper {
+		background: #1867c0;
+            border-color: #1867c0;
+	}
+	.popper__arrow {
+		border-color: #1867c0 transparent transparent transparent !important;
+	}
+}
+.forestry {
+	.popper {
+		background: white;
+            border-color: white;
+            color:#1B262C;
+	}
+	.popper__arrow {
+		border-color: white transparent transparent transparent !important;
+	}
+}
+
+
+//////////////////////////////////
+
+.typo3 {
+	.popper {
+		background: #ff8700;
+            border-color: #ff8700;
+	}
+	.popper__arrow {
+		border-color: #ff8700 transparent transparent transparent !important;
+	}
+}
+
+.wordpress {
+	.popper {
+		background: #21759b;
+            border-color: #21759b;
+	}
+	.popper__arrow {
+		border-color: #21759b transparent transparent transparent !important;
+	}
+}
+
+.shopware {
+	.popper {
+		background: #189eff;
+            border-color: #189eff;
+	}
+	.popper__arrow {
+		border-color: #189eff transparent transparent transparent !important;
+	}
+}
+
+.craft {
+	.popper {
+		background: #e5422b;
+            border-color: #e5422b;
+	}
+	.popper__arrow {
+		border-color: #e5422b transparent transparent transparent !important;
+	}
+}
+.drupal {
+	.popper {
+		background: #0678be;
+            border-color: #0678be;
+	}
+	.popper__arrow {
+		border-color: #0678be transparent transparent transparent !important;
+	}
+}
+.shopify {
+	.popper {
+		background: #7ab55c;
+            border-color: #7ab55c;
+	}
+	.popper__arrow {
+		border-color: #7ab55c transparent transparent transparent !important;
+	}
+}
+
+//////////////////////////////////
+
+.sketch {
+	.popper {
+		background: #f7b500;
+            border-color: #f7b500;
+            color:#1B262C;
+	}
+	.popper__arrow {
+		border-color: #f7b500 transparent transparent transparent !important;
+	}
+}
+
+.js {
+	.popper {
+		background: #f7df1e;
+            border-color: #f7df1e;
+             color:#1B262C;
+	}
+	.popper__arrow {
+		border-color: #f7df1e transparent transparent transparent !important;
+	}
+}
+
+.gsap {
+	.popper {
+		background: #88ce02;
+            border-color: #88ce02;
+             color:#1B262C;
+	}
+	.popper__arrow {
+		border-color: #88ce02 transparent transparent transparent !important;
+	}
+}
+
+.tailwind {
+	.popper {
+		background: #38b2ac;
+            border-color: #38b2ac;
+	}
+	.popper__arrow {
+		border-color: #38b2ac transparent transparent transparent !important;
+	}
+}
+.sass {
+	.popper {
+		background: #cc6699;
+            border-color: #cc6699;
+	}
+	.popper__arrow {
+		border-color: #cc6699 transparent transparent transparent !important;
+	}
+}
+.css3 {
+	.popper {
+		background: #1572b6;
+            border-color: #1572b6;
+	}
+	.popper__arrow {
+		border-color: #1572b6 transparent transparent transparent !important;
+	}
+}
+.html5 {
+	.popper {
+		background: #e34f26;
+            border-color: #e34f26;
+	}
+	.popper__arrow {
+		border-color: #e34f26 transparent transparent transparent !important;
+	}
+}
+.bootstrap {
+	.popper {
+		background: #563d7c;
+            border-color: #563d7c;
+	}
+	.popper__arrow {
+		border-color: #563d7c transparent transparent transparent !important;
+	}
+}
+

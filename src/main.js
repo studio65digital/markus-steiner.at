@@ -1,5 +1,5 @@
 import Vue from 'vue';
-import '~/assets/styles/global.scss'
+import '~/assets/styles/popper.scss'
 import '~/assets/styles/animations.scss'
 import DefaultLayout from '~/layouts/Default.vue';
 

@@ -13,7 +13,8 @@
             "gridsome": "^0.7.0",
             "swiper": "^5.3.7",
             "tailwindcss": "^1.2.0",
-            "vue-awesome-swiper": "^4.1.0"
+            "vue-awesome-swiper": "^4.1.0",
+            "vue-popperjs": "^2.3.0"
       },
       "devDependencies": {
             "gridsome-plugin-tailwindcss": "^2.2.43",

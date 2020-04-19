@@ -467,5 +467,14 @@ export default {
 	.wordpress:before {
 		content: url(../../assets/images/techstack/wordpress.svg);
 	}
+	.sketch:before {
+		content: url(../../assets/images/techstack/sketch.svg);
+	}
+	.shopify:before {
+		content: url(../../assets/images/techstack/shopify.svg);
+	}
+	.forestry:before {
+		content: url(../../assets/images/techstack/shopify.svg);
+	}
 }
 </style>

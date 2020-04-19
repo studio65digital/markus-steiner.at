@@ -17,7 +17,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 @font-face {
 	font-family: "Merriweather";
 	src: url("../assets/fonts/Merriweather-Light.eot");
@@ -77,12 +77,14 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: antialiased;
 	color: theme("colors.dark");
+	font-family: "Gilroy";
 }
 #app {
 	padding-top: 8.2vw;
 }
 h1,
-h2 {
+h2,
+h3 {
 	font-family: "Gilroy";
 	font-weight: 800;
 }
