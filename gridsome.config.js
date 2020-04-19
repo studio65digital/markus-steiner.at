@@ -9,6 +9,12 @@ module.exports = {
                   use: 'gridsome-plugin-tailwindcss'
             },
             {
+                  use: '@gridsome/plugin-critical',
+                  options: {
+                        paths: ['assets/styles/'],
+                  }
+            },
+            {
                   use: "@gridsome/source-filesystem",
                   options: {
                         path: "content/Hero/**/*.md",
