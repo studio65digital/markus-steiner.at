@@ -345,7 +345,7 @@ export default {
 </script>
 <style scoped lang="scss">
 #fullstack {
-	margin: 10vw;
+	margin: 10vw 5.555vw;
 	padding: 3vw 5.5vw;
 }
 h3 {
