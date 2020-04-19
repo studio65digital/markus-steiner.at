@@ -4,15 +4,14 @@ auto_deploy: false
 admin_path: "/static/admin"
 webhook_url: 
 sections:
-- type: document
-  path: data/theme.json
-  label: Theme Konfiguration
-  match: "**/*"
 - type: directory
   path: content
   label: Startseite
   create: all
   match: "**/*"
+- type: document
+  path: data/theme.json
+  label: Theme Konfiguration
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
