@@ -11,6 +11,8 @@
             "@gridsome/source-filesystem": "^0.6.2",
             "@gridsome/transformer-remark": "^0.5.0",
             "gridsome": "^0.7.0",
+            "gsap": "^3.2.6",
+            "scrollmagic": "^2.0.7",
             "swiper": "^5.3.7",
             "tailwindcss": "^1.2.0",
             "vue-awesome-swiper": "^4.1.0",

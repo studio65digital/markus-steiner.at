@@ -56,12 +56,6 @@ h1 {
 .heroImage {
 	position: relative;
 	right: 5.555vw;
-	img {
-		min-width: 110%;
-		left: -10%;
-		display: block;
-		position: relative;
-	}
 }
 .arrow-hl:after {
 	position: absolute;
