@@ -6,6 +6,7 @@
 		</div>
 		<sd-referenzen-slider :referenz="$page.referenz.edges"></sd-referenzen-slider>
 		<sd-about-me :about="$page.about.edges"></sd-about-me>
+            <sd-footer></sd-footer>
 
 		<br />
 		<br />
