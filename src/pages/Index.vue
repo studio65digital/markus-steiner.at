@@ -67,7 +67,7 @@ query ContentHome{
 import homeHero from "~/components/contentElements/heroHome/HeroHome.vue";
 import servicesGrid from "~/components/contentElements/ServicesGrid.vue";
 import referenzSlider from "~/components/contentElements/ReferenzSlider.vue";
-import aboutMe from "~/components/contentElements/AboutMe.vue";
+// import aboutMe from "~/components/contentElements/AboutMe.vue";
 export default {
 	components: {
 		"sd-home-hero": homeHero,
