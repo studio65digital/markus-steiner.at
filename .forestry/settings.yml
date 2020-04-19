@@ -5,10 +5,9 @@ admin_path: "/static/admin"
 webhook_url: 
 sections:
 - type: document
-  path: content/footer/*
-  label: Footer Content
+  path: data/theme.json
+  label: Theme Konfiguration
   match: "**/*"
-  read_only: false
 - type: directory
   path: content
   label: Startseite
