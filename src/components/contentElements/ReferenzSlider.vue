@@ -106,9 +106,11 @@ export default {
 		Swiper,
 		SwiperSlide
 	},
-	directives: {
-		swiper: directive
-	},
+	directives: !process.browser
+		? {}
+		: {
+				swiper: require("vue-awesome-swiper").directive
+		  },
 	data() {
 		return {
 			swiperOptionTop: {
@@ -137,6 +139,7 @@ export default {
 		};
 	},
 	mounted() {
+		console.log("Swiper instance:", this.swiperLeft);
 		this.$nextTick(() => {
 			this.swiperLeft.controller.control = this.swiperRight;
 			this.swiperRight.controller.control = this.swiperLeft;
@@ -413,5 +416,78 @@ export default {
 	}
 
 	/////// Techstack
+
+	.angular:before {
+		content: url(../../assets/images/techstack/angular.svg);
+	}
+	.bootstrap:before {
+		content: url(../../assets/images/techstack/bootstrap.svg);
+	}
+	.craftcms:before {
+		content: url(../../assets/images/techstack/craftcms.svg);
+	}
+	.css3:before {
+		content: url(../../assets/images/techstack/css3.svg);
+	}
+	.drupal:before {
+		content: url(../../assets/images/techstack/drupal.svg);
+	}
+	.gatsby:before {
+		content: url(../../assets/images/techstack/gatsby.svg);
+	}
+	.graphql:before {
+		content: url(../../assets/images/techstack/graphql.svg);
+	}
+	.gsap:before {
+		content: url(../../assets/images/techstack/gsap.svg);
+	}
+	.html5:before {
+		content: url(../../assets/images/techstack/html5.svg);
+	}
+	.angular:before {
+		content: url(../../assets/images/techstack/angular.svg);
+	}
+	.jquery:before {
+		content: url(../../assets/images/techstack/jquery.svg);
+	}
+	.js:before {
+		content: url(../../assets/images/techstack/js.svg);
+	}
+	.react:before {
+		content: url(../../assets/images/techstack/react.svg);
+	}
+	.sass:before {
+		content: url(../../assets/images/techstack/sass.svg);
+	}
+	.shopware:before {
+		content: url(../../assets/images/techstack/shopware.svg);
+	}
+	.tailwindcss:before {
+		content: url(../../assets/images/techstack/tailwindcss.svg);
+	}
+	.typo3:before {
+		content: url(../../assets/images/techstack/typo3.svg);
+	}
+	.vue:before {
+		content: url(../../assets/images/techstack/vue.svg);
+	}
+	.vuetify:before {
+		content: url(../../assets/images/techstack/vuetify.svg);
+	}
+	.woo:before {
+		content: url(../../assets/images/techstack/woo.svg);
+	}
+	.wordpress:before {
+		content: url(../../assets/images/techstack/wordpress.svg);
+	}
+	.sketch:before {
+		content: url(../../assets/images/techstack/sketch.svg);
+	}
+	.shopify:before {
+		content: url(../../assets/images/techstack/shopify.svg);
+	}
+	.forestry:before {
+		content: url(../../assets/images/techstack/shopify.svg);
+	}
 }
 </style>

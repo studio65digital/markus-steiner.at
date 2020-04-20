@@ -6,7 +6,12 @@ module.exports = {
       },
       plugins: [
             {
-                  use: 'gridsome-plugin-tailwindcss'
+                  use: 'gridsome-plugin-tailwindcss',
+                  options: {
+                        shouldPurge: false,
+                        shouldImport: false,
+                        shouldTimeTravel: true
+                  }
             },
             {
                   use: '@gridsome/plugin-critical',
