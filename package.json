@@ -14,11 +14,11 @@
             "eslint-plugin-gridsome": "^1.4.1",
             "gridsome": "^0.7.0",
             "gsap": "^3.2.6",
-            "scrollmagic": "^2.0.7",
             "swiper": "^5.3.7",
             "tailwindcss": "^1.2.0",
             "vue-awesome-swiper": "^4.1.0",
-            "vue-popperjs": "^2.3.0"
+            "vue-popperjs": "^2.3.0",
+            "vue-scrollmagic": "^1.2.0"
       },
       "devDependencies": {
             "gridsome-plugin-tailwindcss": "^2.2.43",
